@@ -10,6 +10,48 @@
         const return_function = function_name.apply(object_name, [argument 1, argument 2] )
         return_function()
 
+```
+let car1 = {
+  name: "Maruti",
+  color: "red",
+  price: "10Lpa",
+};
+let car2 = {
+  name: "Tata",
+  color: "White",
+  price: "7Lpa",
+};
+
+let print = function (quantity, oil) {
+  console.log(this.name, this.color, this.price, quantity, oil);
+};
+// car1.print();
+print.call(car1, 5, "Petrol");
+
+// car1.print.call({ ...car2, price: "9Lpa" });
+print.call({ ...car2, price: "9Lpa" }, 5, "diesel");
+
+print.apply(car2, [4, "Petrol"]);
+
+const printData = print.bind(car2, 10, "petrol");
+printData();
+
+```
+
+## bind polyfills
+
+```
+Function.prototype.myBind = function (...args) {
+  let obj = this;
+  let param = args.slice(1);
+  return function (...args2) {
+    obj.apply(args[0], [...param, ...args2]);
+  };
+};
+let data = print.myBind(car1, 10, "Petrol");
+data(180);
+```
+
 ### Q. What is the difference between readFile and readFileSync?
 
     In fs. readFile() method, we can read a file in a non-blocking asynchronous way, but in fs. readFileSync() method, we can read files in a synchronous way,
@@ -35,7 +77,6 @@
                             && obj2[key] === obj1[key]);
                 }
                 return false;
-
 
 Function statement / Function Declaration :- the function is normally defined and can be used later on
 Function expression :- the function is first created and assigned to a variable so that it can be called by its variable name and unless it is defined, it cannot be executed otherwise it throws out "Uncaught TypeError"

@@ -1,3 +1,24 @@
+### Q. What is Redux ?
+
+    Redux is a predicatable state container for javascript app.
+    This is library of JavaScript .
+
+### Q. why
+
+    If we want to manage the state of the application then we redux can help us.
+
+### Q. what is react-redux?
+
+    This is a library that provides bindings to use react and redux together in a application.
+
+### Q. what is core concept of redux?
+
+#### Action - Describe what happend
+
+#### Reducer - Ties the store and action together
+
+#### Store - Hold state of applications
+
 ### Q. Explain redux to a 5 year old (ELI5) ?
 
     Suppose one morning you want to buy a chocolate, your intentions are clear, so you will do action, by going to rmarket, where you will go to a shop and ask for a chocolate by giving him some money, although there is a box and you can easily take a chocolate yourself, but you are following a process as things dont work that way, right. Here chocolate shop is a store, and shopkeeper the person who organize teh store. Almost same thing happens in redux.
@@ -41,3 +62,30 @@
 
     Tree shacking is a process of removal of dead code.
     Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+
+### Q. What is middleware in redux?
+
+    In suggested way to extend redux with custom functionality.
+    Provide a third party extension between dispatching an action and the moment it reaches the reducer.
+    Use middleware for logging , crash reporting and performing
+    asynchronous tasks.
+
+```
+npm i redux-logger
+import {createLogger}  from "redux-logger"
+import {applymiddleware} from "redux"
+const logger = createLogger();
+cosnt store = createStore(reducer, logger);
+```
+
+### Q. What is Redux-Thunk
+
+    Define asynchronous action creater
+    middeleware
+
+```
+import {createLogger}  from "redux-logger"
+import {applymiddleware} from "redux"
+import thunk from "redux-thunk"
+cosnt store = createStore(reducer, applymiddleware(thunk));
+```
