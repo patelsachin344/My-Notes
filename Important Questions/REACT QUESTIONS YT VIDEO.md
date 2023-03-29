@@ -1,6 +1,6 @@
 ### Q. How Virtual DOM is different than the actual DOM?
 
-DOM is an interface that allows the script to update the content, style, and structure of the document. Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.DOM is an interface that allows the script to update the content, style, and structure of the document. Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.
+DOM is an interface that allows the script to update the content, style, and structure of the document. Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.
 
 ### Q. Diffrence bw Virtual DOM and DOM =
 
@@ -52,7 +52,7 @@ There are two types of components, Functional and Class Components.
 ### Q. Rendering in React.
 
 Rendering is a process in react with which react updates the virtual DOM.
-In rendering react engine process walks through the virtual DOM and collects current state, props and structure desired change, react updates the virtual DOM using some calculations officially called 'Reconciliation', then compaes it with real DOM too. Then update the needed changes in DOM.
+In rendering react engine process walks through the virtual DOM and collects current state, props and structure desired change, react updates the virtual DOM using some calculations officially called 'Reconciliation', then compare it with real DOM too. Then update the needed changes in DOM.
 
 ### Q. What is State in React.
 
@@ -211,7 +211,7 @@ Number of Stores
 State
 Storage
 
-    Flex
+    Flux
         Components connected to Flux in React
         Has a dispatcher
         Single store

@@ -21,7 +21,7 @@
 
 ### Q. Explain redux to a 5 year old (ELI5) ?
 
-    Suppose one morning you want to buy a chocolate, your intentions are clear, so you will do action, by going to rmarket, where you will go to a shop and ask for a chocolate by giving him some money, although there is a box and you can easily take a chocolate yourself, but you are following a process as things dont work that way, right. Here chocolate shop is a store, and shopkeeper the person who organize teh store. Almost same thing happens in redux.
+    Suppose one morning you want to buy a chocolate, your intentions are clear, so you will do action, by going to market, where you will go to a shop and ask for a chocolate by giving him some money, although there is a box and you can easily take a chocolate yourself, but you are following a process as things dont work that way, right. Here chocolate shop is a store, and shopkeeper the person who organize the store. Almost same thing happens in redux.
 
 ### Q. What is immutability?
 
@@ -43,7 +43,7 @@
 
      While Redux minimises unnecessory rerendering and havily optimized, specially version 5 onwards.
      But still it it too complex , restricted, and excessive memory use might be issues.
-     Architecture is great for bigger projects and works well, but it will be a poor choice when you are making a smaller simpla app.
+     Architecture is great for bigger projects and works well, but it will be a poor choice when you are making a smaller simple app.
 
 ### Q. How does Redux compare to the React Context API?
 

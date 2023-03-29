@@ -94,13 +94,12 @@ first class Functions / first class citizens :-
 
 ### Q.. What is call Stack ?
 
-A. JavaScript is single threaded language ,it has one call stack and it can only to one task at a time,
-this cal stack present in JavaScript engine and all the JavaScript code execute in call stack.
+A. JavaScript is single threaded language ,it has one call stack and it can only do one task at a time,
+this call stack present in JavaScript engine and all the JavaScript code execute in call stack.
 
 ### Q.. What is the call back function?
 
-A. when we call the function with the arguments, and we give arguments as the function that function calls
-as a call back function.
+A. when we call the function with the arguments, and we give arguments as the function that function calls as a call back function.
 Function that is passed on as argument to another function is called callback function.
 
 ### Q.. what is the event listener?
@@ -116,7 +115,7 @@ this variable not dependent on the called function that time this variable goes 
 
 1. Event listeners consume a lot of memory which can potentially slow down the website therefore
    it is good practice to remove if it is not used.
-2. setTimeout helps turn JS which is sinhlethreaded and synchronous into asynchronous.
+2. setTimeout helps turn JS which is singlethreaded and synchronous into asynchronous.
 3. Event listeners can also invoke closures with scope.
 
 Event Loop :-
@@ -137,9 +136,7 @@ The order in which the Event Loop works is:
 
 The two problems that we faced in callbacks are:-
 
-1. Callback Hell: Asynchronous operations in JavaScript can be achieved through callbacks. Whenever there
-   are multiple dependent Asynchronous operations it will result in a lot of nested callbacks. This will
-   cause a 'pyramid of doom' like structure.
+1. Callback Hell: Asynchronous operations in JavaScript can be achieved through callbacks. Whenever there are multiple dependent Asynchronous operations it will result in a lot of nested callbacks. This will cause a 'pyramid of doom' like structure.
 2. Inversion of control: When we give the control of callbacks being called to some other API, this may
    create a lot of issues. That API may be buggy, may not call our callback and create order as in the
    above example, may call the payment callback twice etc.
