@@ -4,12 +4,13 @@ DOM is an interface that allows the script to update the content, style, and str
 
 ### Q. Diffrence bw Virtual DOM and DOM =
 
-Virtual DOM Real DOM
-Changes can be made easily Changes can be expensive
-Minimal memory wastage High demand for memory and more wastage
-JSX element is updated if the element exists Creates a new DOM every time and element gets updated
-Cannot update HTML directly Able to directly manipulate HTML
-Faster updates Slow updates
+# Virtual DOM || Real DOM
+
+Changes can be made easily || Changes can be expensive
+Minimal memory wastage High demand for memory || more wastage
+JSX element is updated if the element exists || Creates a new DOM every time and element gets updated
+Cannot update HTML directly || Able to directly manipulate HTML
+Faster updates || Slow updates
 
 ### Q. What is React
 
